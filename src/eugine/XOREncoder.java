@@ -13,12 +13,12 @@ public class XOREncoder implements Encoder{
 	}
 	
 	private String XOR(String str, String secret) {
-		char[] key = secret.toCharArray(); //Can be any chars, and any length array
-		String output = "";
+		char[] key = secret.toCharArray();
+		StringBuilder output = new StringBuilder();
 		
 		for(int i = 0; i < str.length(); i++) {
-			output += ((char) (str.charAt(i) ^ key[i % key.length]));
+			output.append((char) (str.charAt(i) ^ key[i % key.length]));
 		}
-		return output;
+		return output.toString();
 	}
 }
