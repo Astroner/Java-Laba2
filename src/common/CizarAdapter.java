@@ -11,7 +11,6 @@ public class CizarAdapter implements Encoder{
 		return this.wrappee.encode(message, Integer.parseInt(key));
 	}
 	public String decode(String message, String key) {
-		return this.wrappee.encode(message, Integer.parseInt(key));
+		return this.wrappee.decode(message, Integer.parseInt(key));
 	}
-	
 }

@@ -1,6 +1,5 @@
 package eugine;
 
-import common.Encoder;
 import mary.Executable;
 
 public class BasicPoint implements Point{

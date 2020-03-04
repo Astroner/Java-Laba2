@@ -5,9 +5,11 @@ import java.util.Scanner;
 public class CLI {
 	private Point[] points;
 	private Scanner scn = new Scanner(System.in);
+	
 	public CLI(Point[] points){
 		this.points = points;
 	}
+	
 	public void start(){
 		while(true) {
 			this.printLabels();
@@ -18,12 +20,14 @@ public class CLI {
 			this.points[choise].exec();
 		}
 	}
+	
 	private void printLabels() {
 		for(int i = 0; i < this.points.length; i++) {
 			System.out.println((i + 1) + ". " + this.points[i].getLabel());
 		}
 		System.out.println((this.points.length + 1) + ". " + "Выход");
 	}
+	
 	private int readChoise() {
 		int choise = 0;
 		while(true) {
