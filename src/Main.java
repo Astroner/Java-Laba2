@@ -10,7 +10,7 @@ import mary.Executor;
 public class Main {
 
 	public static void main(String[] args) {
-		String message = "Ўла —аша по шоссе и сосала сушку.";
+		String message = "Ўла —аша по шоссе и сосала сушку";
 		String xor_secret = "secret";
 		String basic_shift = "3";
 			
